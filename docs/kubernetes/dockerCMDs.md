@@ -7,3 +7,5 @@
  #remove image from docker
   docker rmi <image>:<tag>
   
+  docker tag <source_account>.dkr.ecr.us-east-1.amazonaws.com/<image>:<tag> <dest_account>.dkr.ecr.us-east-1.amazonaws.com/<image>:<tag>
+ docker push <dest_account>.dkr.ecr.us-east-1.amazonaws.com/<image>:<tag>
