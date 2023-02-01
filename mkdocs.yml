@@ -1,0 +1,18 @@
+site_name: My Personal documentation
+repo_name:
+repo_url:
+edit_uri:
+
+nav:
+  - Home:
+      Welcome: index.md
+  - Kubernetes: kubernetes.md
+  - Aws:
+      - ACM: aws/aws.md
+  - Github:
+      - Workflows: github/github.md
+      - runner: github/gh_runner.md
+  - Gitlab:
+      - Runner: gitlab/gl_runner.md
+
+
