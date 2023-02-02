@@ -6,7 +6,9 @@ edit_uri:
 nav:
   - Home:
       Welcome: index.md
-  - Kubernetes: kubernetes.md
+  - Kubernetes:
+      - kubernetes/kubernetes.md
+      - docker: kubernetes/dockerCMDs.md
   - Aws:
       - ACM: aws/aws.md
   - Github:
@@ -14,6 +16,13 @@ nav:
       - runner: github/gh_runner.md
   - Gitlab:
       - Runner: gitlab/gl_runner.md
+  - Postgress:
+      - Setup: setup.md
+      - connect to db: connect.md
+
+  - Semantic Versioning:
+      - Semantic release: semver/semantic-release.md
+
 
 
 plugins:
