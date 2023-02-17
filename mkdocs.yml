@@ -21,40 +21,125 @@ nav:
       - connect to db: connect.md
 
   - Semantic Versioning:
-      - Semantic release: semver/semantic-release.md
+      - Overview: semver/semantic-release.md
+      - Setup: semver/setup.md
 
 
 
 plugins:
   - search
+#theme:
+#  name: material
+#  language: en
+##  favicon: assets/images/aws_load_balancer_icon.svg
+#  palette:
+#    primary: indigo
+#    accent: indigomk
+#  font:
+#    text: Roboto
+#    code: Roboto Mono
+#  features:
+#    - navigation.tabs
+#  custom_dir: docs/theme_overrides
+#Extensions
+#markdown_extensions:
+#  - admonition
+#  - attr_list
+#  - codehilite
+#  - pymdownx.inlinehilite
+#  - pymdownx.tasklist:
+#      custom_checkbox: true
+#  - pymdownx.superfences
+#  - pymdownx.tabbed
+#  - pymdownx.emoji:
+#      emoji_index: !!python/name:materialx.emoji.twemoji
+#      emoji_generator: !!python/name:materialx.emoji.to_svg
+#  - toc:
+#      permalink: true
 theme:
   name: material
-  language: en
-#  favicon: assets/images/aws_load_balancer_icon.svg
+#  custom_dir: material/.overrides
+  features:
+    # - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
-    primary: indigo
-    accent: indigomk
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
-  features:
-    - navigation.tabs
-#  custom_dir: docs/theme_overrides
-#Extensions
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
-  - codehilite
-  - pymdownx.inlinehilite
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+  - footnotes
+  - md_in_html
   - toc:
       permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 extra_css:
   - https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css
 extra_javascript:
