@@ -5,7 +5,7 @@ Semantic versioning (also known as SemVer) is a versioning system that has been 
 
 So, SemVer is in the form of Major.Minor.Patch
 
-![img.png](img.png)
+![img.png](../img.png)
 
 Semantic Versioning is a 3-component number in the format of X.Y.Z, where :
 
@@ -34,7 +34,7 @@ For each new commit added to one of the release branches (for example: master, n
 semantic-release offers various ways to control the timing, the content and the audience of published releases. See example workflows in the following recipes:
 
 ### release channels
-![image.png](image.png)
+![image.png](../image.png)
 ### Pre-releases    
 We now decide to work on a future major release, which will be composed of multiple features, some of them being breaking changes. We want to publish our package for each new feature developed for test purpose, however we do not want to increment our package version or make it available to our users until all the features are developed and tested.
 
@@ -55,5 +55,5 @@ With another feature, the Git history of the repository is now:
   |  * feat: second feature # => v2.0.0-beta.2 on @beta
 
 
-![image-1.png](image-1.png)
+![image-1.png](../image-1.png)
 ### Maintenance releases
