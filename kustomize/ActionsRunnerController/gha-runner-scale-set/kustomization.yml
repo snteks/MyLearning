@@ -6,7 +6,7 @@ helmCharts:
     releaseName: ado10-runner-set
     namespace: core-arc-systems
     valuesInline:
-      githubConfigUrl: https://github.com/ccsq-qdas
+      githubConfigUrl: https://github.com/snteks
       githubConfigSecret:
         github_token: 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
       controllerServiceAccount:
